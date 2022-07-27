@@ -12,6 +12,7 @@ class MenuProfile extends StatelessWidget {
         left: 10.0,
         right: 10.0
       ),
+      color: const Color(0xFF584CD1),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceAround,

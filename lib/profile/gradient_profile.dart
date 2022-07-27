@@ -7,20 +7,9 @@ class GradientProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return Container(
-      height: 400.0,
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Color(0xFF4268D3),
-            Color(0xFF584CD1)
-          ],
-          begin: FractionalOffset(0.2, 0.0),
-          end: FractionalOffset(1.0, 0.6),
-          stops: [0.0, 0.6],
-          tileMode: TileMode.clamp
-        )
-      ),
-      alignment: const Alignment(-0.9, -0.6),
+      height: 500.0,
+      color: const Color(0xFF584CD1),
+      alignment: const Alignment(-0.9, -0.7),
 
       child: const Text(
         "Perfil", 

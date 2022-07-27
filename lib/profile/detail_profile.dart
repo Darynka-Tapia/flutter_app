@@ -53,9 +53,13 @@ class DetailProfile extends StatelessWidget {
 
     return Container(
       margin: const EdgeInsets.only(
-        top: 120.0,
-        left: 20.0
+        top: 120.0
       ),
+      padding: const EdgeInsets.only(
+        left: 20.0,
+        right: 20.0
+      ),
+      color: const Color(0xFF584CD1),
       child: Row(
         children:  [
           photo,
