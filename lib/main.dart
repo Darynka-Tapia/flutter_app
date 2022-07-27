@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'description_place.dart';
-import 'review_list.dart';
-import 'header_appbar.dart';
+import 'package:platzi_tripss_app/platzi_trips.dart';
+import 'home/home_trip.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -32,24 +31,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-          body: Stack(
-            children: [
-              ListView(
-                children: [
-                  DescriptionPlace(
-                    namePlace: "Los Cabos", 
-                    stars:3, 
-                    descriptionPlace: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet sociis risus vestibulum, tincidunt nostra quisque dis auctor dictum metus gravida erat mattis, vulputate ridiculus himenaeos porta porttitor senectus leo venenatis placerat viverra. "
-                  ),
-                  const ReviewList()
-                ],
-              ),
-              const HederAppBar()
-            ],
-          )
-
-      )  /*const MyHomePage(title: 'Flutter Demo Home Page'),*/
+      home: const PlatziTrips()
     );
   }
 }
