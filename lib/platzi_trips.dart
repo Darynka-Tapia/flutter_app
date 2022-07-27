@@ -14,9 +14,9 @@ class PlatziTrips extends StatefulWidget {
 class _PlatziTripsState extends State<PlatziTrips> {
   int indexTap = 0;
   final List<Widget> widgetsChildent = const [
+    ProfileTrips(),
     HomeTrips(),
     Search(),
-    ProfileTrips()
   ];
   
   void _onItemTapped(int index){
@@ -36,9 +36,9 @@ class _PlatziTripsState extends State<PlatziTrips> {
           selectedItemColor: const Color(0xFF584CD1),
           unselectedItemColor: const Color(0xFF4268D3).withOpacity(0.8),
           items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.people), label: 'Perfil'),
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Inicio'),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Buscar'),
-            BottomNavigationBarItem(icon: Icon(Icons.people), label: 'Perfil'),
           ],
         ),
       );
