@@ -13,6 +13,11 @@ class ListCardsProfile extends StatelessWidget {
       child: Column(
         children: const [
           CardProfile(),
+          CardProfile(),
+          CardProfile(),
+          CardProfile(),
+          CardProfile(),
+          CardProfile(),
         ],
       )
       
